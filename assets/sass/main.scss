@@ -66,8 +66,11 @@ header {
   margin-left: 280px;
   padding: 20px;
   background: #fff;
+
   .search-area {
     display: inline-block;
+    width: 80%;
+
     .fa {
       color: $greyDark;
     }
@@ -78,6 +81,12 @@ header {
       color: $greenNeon;
       padding: 10px;
       font-weight: 100;
+      width: 80%;
+      outline: none;
+      transition: all 0.5 ease-in-out;
+      &:hover {
+        background: $greyLight;
+      }
     }
   }
 
@@ -85,5 +94,53 @@ header {
     display: inline-block;
     float: right;
     padding: 10px;
+    a {
+      color: #1b1b1b;
+      display: inline-block;
+      padding-right: 20px;
+      text-decoration: none;
+      height: 30px;
+      vertical-align: top;
+      &.add {
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 7px;
+      }
+      &.notification {
+        position: relative;
+        padding-top: 5px;
+        font-size: 20px;
+        .circle {
+          background: red;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          display: inline-block;
+          font-size: 11px;
+          color: #fff;
+          text-align: center;
+          position: absolute;
+          top: 3px;
+          left: 7px;
+        }
+      }
+      .user-img {
+        background: url("https://s3.amazonaws.com/uifaces/faces/twitter/k/128.jpg")
+          no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .fa-caret-down {
+        position: relative;
+        top: -8px;
+      }
+    }
   }
 }
