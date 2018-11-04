@@ -1,65 +1,89 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
+@import "variables";
 
 body {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background: $greyLight;
 }
 
-h1 {
-  font-weight: 100;
-  font-size: 50px;
-}
-
-.home {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-
-  img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
-  .Aligner {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Aligner-item {
-    max-width: 50%;
-  }
-
-  .menu {
-    ul {
-      li {
-        padding: 10px 15px;
+#sideMenu {
+  background: $purpleLight;
+  width: 280px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  nav {
+    h2.nav-title {
+      color: #fff;
+      font-size: 2rem;
+      position: absolute;
+      top: 15px;
+      text-align: center;
+      width: 100%;
+      font-weight: 700;
+    }
+    padding-top: 100px;
+    a {
+      display: block;
+      color: $greyDark;
+      text-decoration: none;
+      padding: 15px 30px;
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        background: $purpleDark;
+        border-left: 5px solid $greenNeon;
+        padding: 15px 30px 15px 35px;
+        color: $greenNeon;
+        .fa {
+          color: $greenNeon;
+        }
+      }
+      .fa {
+        color: $greyDark;
+        font-weight: 300;
+        font-size: 1.4rem;
+        margin-right: 0.8rem;
         display: inline-block;
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        font-weight: 500;
+        width: 30px;
+        position: relative;
+        top: 2px;
+      }
+      &.active {
+        background: $purpleDark;
+        border-left: 5px solid $greenNeon;
+        padding: 15px 30px 15px 25px;
+        .fa {
+          color: $greenNeon;
+        }
       }
     }
   }
+}
 
-  .version-num {
-    background: #e8e8e8;
-    border-radius: 4px;
-    padding: 7px 15px;
+header {
+  margin-left: 280px;
+  padding: 20px;
+  background: #fff;
+  .search-area {
     display: inline-block;
-    font-size: 12px;
-    margin: 10px 0 20px;
+    .fa {
+      color: $greyDark;
+    }
+    input[type="text"] {
+      background: transparent;
+      border: none;
+      font-size: 1.3rem;
+      color: $greenNeon;
+      padding: 10px;
+      font-weight: 100;
+    }
   }
 
-  a {
-    text-decoration: none;
-    color: #30395c;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      color: #43d4d6;
-    }
+  .user-area {
+    display: inline-block;
+    float: right;
+    padding: 10px;
   }
 }
