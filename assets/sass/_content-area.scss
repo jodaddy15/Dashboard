@@ -1,0 +1,92 @@
+hr {
+  border: 0;
+  border-top: 1px solid #f4f6f9;
+}
+
+#content-area {
+  background: #f4f6f9;
+  margin-left: 280px;
+  padding: 15px;
+  .heading {
+    h1 {
+      color: #6a39cd;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #bcc1cd;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.cards {
+  overflow: auto;
+  .card {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: auto;
+
+    .user-img {
+      background: url("https://s3.amazonaws.com/uifaces/faces/twitter/k/128.jpg")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      border: 3px solid #000;
+      margin: 0 auto;
+    }
+    .user-name {
+      font-size: 1rem;
+      color: #6a39cd;
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .user-title {
+      text-align: center;
+      margin: 10px 0;
+      display: block;
+      font-size: 0.8rem;
+      color: #a9b0b7;
+    }
+  }
+}
+
+.col-md-4 {
+  width: 28.33%;
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.col-md-3 {
+  width: 25%;
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.col-md-9 {
+  width: 50%;
+  padding: 0 15px;
+  display: inline-block;
+
+  .schools {
+    padding: 10px 0px;
+    display: block;
+    color: #859199;
+  }
+}
+
+.education {
+  color: #a9b0b7;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 36px;
+}
