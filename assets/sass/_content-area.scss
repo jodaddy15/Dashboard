@@ -20,73 +20,157 @@ hr {
       margin-bottom: 10px;
     }
   }
-}
-
-.cards {
-  overflow: auto;
-  .card {
-    background: #fff;
-    border-radius: 5px;
-    padding: 20px;
+  .cards {
     overflow: auto;
 
-    .user-img {
-      background: url("https://s3.amazonaws.com/uifaces/faces/twitter/k/128.jpg")
-        no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      width: 115px;
-      height: 115px;
-      border-radius: 50%;
-      border: 3px solid #000;
-      margin: 0 auto;
-    }
-    .user-name {
-      font-size: 1rem;
-      color: #6a39cd;
-      display: block;
-      text-align: center;
-      margin: 10px 0;
-    }
-    .user-title {
-      text-align: center;
-      margin: 10px 0;
-      display: block;
-      font-size: 0.8rem;
-      color: #a9b0b7;
+    .card {
+      background: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      overflow: auto;
+
+      .user-img {
+        background: url("https://s3.amazonaws.com/uifaces/faces/twitter/k/128.jpg")
+          no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        border: 3px solid #000;
+        margin: 0 auto;
+      }
+      .user-name {
+        font-size: 1rem;
+        color: #6a39cd;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+      }
+      .user-title {
+        text-align: center;
+        margin: 10px 0;
+        display: block;
+        font-size: 0.8rem;
+        color: #a9b0b7;
+      }
     }
   }
-}
 
-.col-md-4 {
-  width: 28.33%;
-  padding: 0 15px;
-  display: inline-block;
-}
+  .card p {
+    float: right;
+    font-size: 1.5rem;
+    line-height: 0;
+    color: #a6acb4;
+  }
 
-.col-md-3 {
-  width: 25%;
-  padding: 0 15px;
-  display: inline-block;
-}
+  // .col-md-2 {
+  //   width: 16.67%;
+  //   padding: 0 5px 0 25px;
+  //   display: inline-block;
+  //   float: left;
+  // }
 
-.col-md-9 {
-  width: 50%;
-  padding: 0 15px;
-  display: inline-block;
+  // .col-md-3 {
+  //   width: 25%;
+  //   padding: 0 15px;
+  //   display: inline-block;
+  //   float: left;
+  // }
+
+  // .col-md-4 {
+  //   width: 28.33%;
+  //   position: relative;
+  //   padding: 0 15px;
+  //   display: inline-block;
+  //   float: left;
+  // }
+
+  // .col-md-9 {
+  //   width: 75%;
+  //   padding: 0 15px;
+  //   display: inline-block;
+  //   float: left;
+  // }
+  // .col-md-9 {
+  //   width: 50%;
+  //   padding: 0 15px;
+  //   display: inline-block;
+  //   float: right;
+  // }
+  // .col-md-10 {
+  //   width: 53.33%;
+  //   display: inline-block;
+  //   float: left;
+  //   line-height: 1.5rem;
+  //   font-weight: 500;
+  // }
 
   .schools {
     padding: 10px 0px;
     display: block;
     color: #859199;
+    font-weight: 700;
   }
-}
 
-.education {
-  color: #a9b0b7;
-  font-size: 0.8rem;
-  position: absolute;
-  bottom: 36px;
+  h6 {
+    font-size: 0.8rem;
+    color: #a6acb4;
+  }
+
+  .date {
+    font-size: 1.3rem;
+    display: block;
+    border-left: 5px solid $greenNeon;
+    position: relative;
+    left: -20px;
+    padding: 5px 40px;
+    margin: 20px 0;
+    color: #a6acb4;
+    font-weight: 500;
+  }
+
+  .job-type {
+    background: orange;
+    width: 20px;
+    height: 20px;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    color: #fff;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .location {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: block;
+    color: $greyDarkFont;
+  }
+
+  .position {
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: block;
+    color: #a9b0b7;
+    font-weight: 900;
+  }
+
+  .time {
+    color: $greyDarkFont;
+    font-weight: 400;
+  }
+  .education {
+    color: $greyLightFont;
+    font-size: 0.8rem;
+    font-weight: 900;
+    position: absolute;
+    bottom: 22%;
+    float: left;
+  }
 }

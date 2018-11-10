@@ -1,5 +1,18 @@
 $purpleLight: #302d43;
 $purpleDark: #282639;
 $greenNeon: #92cf48;
-$greyLight: #faf6f9;
-$greyDark: #eaedf3;
+$greyLightBG: #faf6f9;
+$greyDarkBG: #eaedf3;
+$greyDarkFont: #6c7882;
+$greyLightFont: hsl(220, 15%, 77%);
+$greyLightFont2: #a5adbd;
+$orange: #f48320;
+$purple: #744bce;
+
+//Grid Systerm
+$grid-column: 12;
+$grid-max-width: 1200px; //Small Break Point
+$breakpoint-small: "only screen and (min-width: 0px)";
+$breakpoint-medium: "only screen and (min-width: 768px)";
+$breakpoint-large: "only screen and (min-width: 1008px)";
+$breakpoint-xl: "only screen and (min-width: 1300px)";

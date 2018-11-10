@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
 @import "variables";
+@import "grid";
 @import "content-area";
 
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  background: $greyLight;
+  background: $greyLightBG;
 }
 
 #sideMenu {
@@ -28,7 +29,7 @@ body {
     padding-top: 100px;
     a {
       display: block;
-      color: $greyDark;
+      color: $greyDarkFont;
       text-decoration: none;
       padding: 15px 30px;
       &:hover {
@@ -42,7 +43,7 @@ body {
         }
       }
       .fa {
-        color: $greyDark;
+        color: $greyDarkFont;
         font-weight: 300;
         font-size: 1.4rem;
         margin-right: 0.8rem;
@@ -73,7 +74,7 @@ header {
     width: 80%;
 
     .fa {
-      color: $greyDark;
+      color: $greyDarkFont;
     }
     input[type="text"] {
       background: transparent;
@@ -86,7 +87,7 @@ header {
       outline: none;
       transition: all 0.5s ease-in-out;
       &:hover {
-        background: $greyLight;
+        background: $greyLightFont2;
       }
     }
   }
